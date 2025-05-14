@@ -30,12 +30,17 @@ body {
   font-size: 1.5rem;
 }
 
-#user-input {
+#user-inputs {
   padding: 1rem;
   max-width: 30rem;
   margin: 2rem auto;
   border-radius: 4px;
   background: linear-gradient(180deg, #307e6c, #2b996d);
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .input-group {
@@ -44,7 +49,7 @@ body {
   gap: 1.5rem;
 }
 
-#user-input label {
+#user-inputs label {
   display: block;
   margin-bottom: 0.25rem;
   font-family: "Roboto Condensed", sans-serif;
@@ -53,7 +58,7 @@ body {
   text-transform: uppercase;
 }
 
-#user-input input {
+#user-inputs input {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #76c0ae;
@@ -61,6 +66,10 @@ body {
   background-color: transparent;
   color: #c2e9e0;
   font-size: 1rem;
+}
+
+#user-inputs input.error {
+  border: 1px solid #d84040;
 }
 
 #result {
@@ -85,4 +94,9 @@ body {
 
 .center {
   text-align: center;
+}
+
+.error-text {
+  color: #ff9d23;
+  font-weight: 700;
 }
